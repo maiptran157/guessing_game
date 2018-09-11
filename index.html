@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="main.js"></script>
     <title>Guessing Game</title>
 </head>
+
 <body>
-    
+    <div class="container col-md-12 col-sm-12 col-xs-12">
+
+        <div class="form-group form-inline">
+            <img class="col-md-3 col-sm-3 col-xs-2" src="hedgehog 1.png" alt="">
+            <div class="form-control responseToGuess" id="talkbubble">Welcome to my Guesing Game! Now give me a random number.</div>
+        </div>
+        <div class="form-group form-inline">
+            <input class="inputBar form-control col-md-4 col-sm-4 col-xs-2" type="text" placeholder="Input a random number here">
+            <button class="btn btn-default submitBtn" type="button">Submit</button> 
+        </div>
+        <div class="form-group form-inline"><button class="btn btn-default playAgainBtn invisible" type="button">Play Again</button></div>
+        <div class="form-group form-inline currentGuess"></div>
+        <div class="form-group form-inline guessHistory"></div>
+    </div>
 </body>
+
 </html>

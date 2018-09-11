@@ -1,0 +1,103 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: lightpink;
+    ;
+}
+
+.form-group {
+    position: relative;
+    top: 20%;
+    left: 28%;
+}
+
+img,
+#talkbubble {
+    left: 5%;
+}
+
+#talkbubble {
+    width: 30%;
+    height: 4.5em;
+    background: white;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+    vertical-align: center;
+    font-size: 25px;
+    color: pink;
+    animation: shake 3s;
+    animation-iteration-count: infinite;
+}
+
+#talkbubble:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 25%;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid white;
+    border-bottom: 13px solid transparent;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.currentGuess,.guessHistory{
+    color: white;
+}
